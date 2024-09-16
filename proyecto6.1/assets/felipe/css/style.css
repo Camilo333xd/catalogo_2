@@ -30,3 +30,17 @@ body {
 .advertencia {
     color: red;
 }
+.container-form {
+display: flex;
+column-gap: 2rem;
+margin:0 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .container-form {
+        flex-direction: column;
+    }
+    #mascotas {
+        width: 90%; 
+    }
+}

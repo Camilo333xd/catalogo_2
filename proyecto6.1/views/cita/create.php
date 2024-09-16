@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, height=device-height">
     <title>Crear Cita</title>
     <link rel="stylesheet" href="/assets/Brayan/styles/admin.css">
+    <style>
+        /* Fondo blanco para el cuadro que contiene el formulario */
+        .form-container {
+            background: linear-gradient(90deg, hsl(186, 66%, 63%), rgb(30, 162, 195) 64%);
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+            max-width: 900px; /* Ancho máximo del cuadro */
+            width: 100%;
+        }
+    </style>
     <script>
         function validateForm() {
             const nombrePropietario = document.getElementById('nombre_propietario').value;
@@ -44,6 +54,7 @@
 <body id="edit-page-body">
 
     <div class="container-fluid d-flex flex-column justify-content-center align-items-center" style="height: 100vh;">
+        <div class="form-container">
         <div class="container d-flex flex-column justify-content-center align-items-center">
             <h2>Crear Cita</h2>
             <form action="index_citas.php?action=create" method="POST" class="form-edit" onsubmit="return validateForm()">
@@ -91,6 +102,7 @@
                 <button type="submit" class="btn btn-primary">Crear</button>
                 <a href="/index_citas.php" class="btn btn-secondary">Cancelar</a>
             </form>
+        </div>
         </div>
     </div>
 </body>

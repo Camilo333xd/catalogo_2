@@ -20,7 +20,7 @@
                         echo htmlspecialchars($_SESSION['nombre']);
 
                         ?></h1> -->
-  <section>
+  <section class = "container-form" > 
     <div class="registro container mt-5 p-4 rounded">
       <h1>Registro de Datos</h1>
       <form class="formulario" action="index.php?controller=UserController&action=store" method="POST">
@@ -69,7 +69,7 @@
         <a href="index.php?controller=WelcomeController&action=index" class="btn btn-secondary ms-2">Volver a Bienvenida</a>
       </form>
     </div>
-    <div class="registro container mt-5 p-4 rounded">
+    <div class="registro container mt-5 p-4 rounded"  id="mascotas">
     <h1>Mis mascotas</h1>
 
     <table class="table">
